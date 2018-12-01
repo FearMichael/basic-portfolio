@@ -21,13 +21,15 @@ h3 {
 .main {
     background-image: url("/Users/michaelfearnley/Desktop/code/basic-portfolio/assets/images/venice-background.jpg");
     background-size: cover;
+    overflow: auto;
 }
+
 .content {
-    max-height: 960px;
+    height: 960px;
     width: 70%;
     background-color: #ffffff;
     border: 2px solid #dddddd;
-    margin: 50px auto 0;
+    margin: 100px auto 0;
 }
 
 .h-line {
@@ -42,44 +44,52 @@ h3 {
     width: 475px;
     padding: 10px;
 }
+
 .nav-bar {
-height: 50px;
-background-color: #4aaaa5;
-color: #ffffff;
-text-align: right;
-width: 100%;
-position: fixed;
-top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    text-align: right;   
 }
-/* .nav-bar-text {
-    text-align: left;
-    float: left;
-    position: relative;
-} */
-.nav-bar li {
-    display: inline-block;
+
+.inner-nav {
+width: 70%;
+margin: 0;
+padding: 0;
+}
+
+.nav-bar ul {
     list-style-type: none;
+    margin: 30px;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-bar li {
+    display: inline;
+    margin: 10;
     padding: 20px;
 }
 
-.main-header {
-    background-color: #ffffff;
-    border: #cccccc;
-    float: left;
-    display: relative;
+.nav-bar a {
+    color: #4aaaa5;
 }
 
 .footer {
     background-color: #666666;
     text-align: center;
     color: white;
-    height: 50px;
+    height: 30px;
     padding: 5px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    margin: 1px;
+    margin: 0px;
+}
+
+.footer h4 {
+    padding: 0;
+    margin: 0;
 }
 
 .portfolio-wrapper {
@@ -87,4 +97,18 @@ top: 0;
 }
 .portfolio-wrapper span {
     position: absolute;
+}
+.contact-form {
+    margin: 20px auto;
+    padding: 30px;
+}
+.contact-form input[type="text"], .contact-form input[type="email"] {
+border-radius: 5px;
+width: 90%;
+}
+
+textarea {
+    border-radius: 5px;
+    width: 90%;
+    height: 200px;
 }
