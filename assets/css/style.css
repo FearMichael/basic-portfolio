@@ -12,6 +12,7 @@ h2 {
     color: #4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     padding: 10px;
+    margin: 50px 50px;
 }
 
 h3 {
@@ -19,17 +20,21 @@ h3 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 .main {
-    background-image: url("/Users/michaelfearnley/Desktop/code/basic-portfolio/assets/images/venice-background.jpg");
+    background-image: url("../images/venice-background.jpg");
     background-size: cover;
-    overflow: auto;
 }
-
+p {
+    padding: 25px;
+}
 .content {
     height: 960px;
-    width: 70%;
+    width: 60%;
     background-color: #ffffff;
     border: 2px solid #dddddd;
-    margin: 100px auto 0;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    overflow: scroll;
 }
 
 .h-line {
@@ -42,36 +47,8 @@ h3 {
 .prof-pic {
     height: 300px;
     width: 475px;
-    padding: 10px;
-}
-
-.nav-bar {
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    text-align: right;   
-}
-
-.inner-nav {
-width: 70%;
-margin: 0;
-padding: 0;
-}
-
-.nav-bar ul {
-    list-style-type: none;
-    margin: 30px;
-    padding: 0;
-    overflow: hidden;
-}
-.nav-bar li {
-    display: inline;
-    margin: 10;
-    padding: 20px;
-}
-
-.nav-bar a {
-    color: #4aaaa5;
+    padding: 50px;
+    float: left;
 }
 
 .footer {
@@ -86,6 +63,48 @@ padding: 0;
     width: 100%;
     margin: 0px;
 }
+.nav-bar {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-bottom: solid 3px lightgrey; 
+}
+
+nav a, h1 {
+    display: inline-block;
+}
+
+nav a {
+    padding: 5px 15px;
+    margin: 0 0 0 0;
+
+}
+
+.nav-links {
+    margin: 0 20% 0 0;
+    float: right;
+}
+
+.nav-links a {
+    vertical-align: middle;
+    padding: 0 40px;
+    margin: 15px 0 0 0;
+}
+
+.nav-header {
+    margin: 0 0 0 20%;
+    background: #4aaaa5;
+    height: 60px;
+    width: fit-content;
+    float: left;
+}
+
+.nav-header h1 {
+    color: white;
+    font-size: 26px;
+    padding: 0 15px;
+    margin: 12px 0 0 0;
+}
 
 .footer h4 {
     padding: 0;
@@ -93,11 +112,38 @@ padding: 0;
 }
 
 .portfolio-wrapper {
+    height: 200px;
+    width: 300px;
+    padding: 50px;
+    display: inline-block;
+    margin: auto;
     position: relative;
+    top: 0;
+    left: 0;
+}    
+
+.port-pic {
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
 }
 .portfolio-wrapper span {
     position: absolute;
+    bottom: 70px;
+    width: inherit;
+    height: 15px;
+    z-index: 3;
+    background: #4aaaa5c0;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
 }
+
+.port-content {
+    margin: 0 10%;
+}
+
 .contact-form {
     margin: 20px auto;
     padding: 30px;
@@ -112,3 +158,9 @@ textarea {
     width: 90%;
     height: 200px;
 }
+
+/* .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
