@@ -184,12 +184,11 @@ textarea {
     font-size: 18px;
     height: 200px;
 }
-.contact-form input[type="submit"] {
-    padding: 10px;
+.button {
+    padding: 8px;
     font-size: 16px;
-    line-height: 50px;
-}
-
-#submit {
-    line-height: 200px;
+    background-color: #4aaaa5;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
 }
